@@ -19,6 +19,7 @@ hmac = "0.12.1"
 sha2 = "0.10.6"
 chrono = { version = "0.4.22", features = ["serde"] }
 toml = "0.5"
+cron = "0.12"
 
 [dependencies.rocket]
 git = "https://github.com/SergioBenitez/Rocket"
