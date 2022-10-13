@@ -1,0 +1,31 @@
+[package]
+name = "rust-web-project"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members = [
+    "prisma-cli",
+]
+
+[dependencies]
+reqwest = { version = "0.11", default-features = false, features = ["json", "rustls-tls"] }
+serde_json = "1"
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+hmac = "0.12.1"
+sha2 = "0.10.6"
+chrono = { version = "0.4.22", features = ["serde"] }
+toml = "0.5"
+
+[dependencies.rocket]
+git = "https://github.com/SergioBenitez/Rocket"
+tag = "v0.5.0-rc.2"
+
+[dependencies.prisma-client-rust]
+git = "https://github.com/Brendonovich/prisma-client-rust"
+tag = "0.6.2"
+default-features = false
+features = ["mysql"]

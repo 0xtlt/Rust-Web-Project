@@ -1,0 +1,12 @@
+[config.http_server]
+enabled = true
+cors_mode = "*"
+
+[config.database]
+kind = "mysql"
+username = "johndoe"
+password = "randompassword"
+host = "localhost"
+port = 3306
+database = "mydb"
+more_params = "charset=utf8mb4&parseTime=True&loc=Local"
