@@ -20,6 +20,9 @@ sha2 = "0.10.6"
 chrono = { version = "0.4.22", features = ["serde"] }
 toml = "0.5"
 cron = "0.12"
+lazy_static = "1.4"
+async_once = "0.2"
+# rwp_macros = { path = "rwp_macros" }
 
 [dependencies.rocket]
 git = "https://github.com/SergioBenitez/Rocket"
